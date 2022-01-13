@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+#header {
+    height: 100px;
+    background-color: rgb(10, 148, 240);
+}
+
+#side_bar {
+    height: 800px;
+    background-color: blue;
+}
+
+#products {
+    height: 800px;
+    background-color: red;
+}
+.nav_bar {
+    height: 100px;background-color:#ccc;
+}
+.product {
+    margin-top: 12px;
+    height: 250px;
+    background-color: yellow;
+}
+.product h3 {
+    overflow: hidden;
+    height: 60px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    margin: 6px;
+}
+.product h4,
+.product a {
+    margin: 0px 6px;
+
+}
+#footer {
+    height: 50px;
+    background-color: rgb(78, 240, 14);
+}
