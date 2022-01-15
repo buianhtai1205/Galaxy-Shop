@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +14,15 @@
 <body>
     <div id="main">
         <div id="header">
-            <a href="">Galaxy_Shop</a>
-            <a href="form_signin.php">Đăng nhập</a>
-            <a href="form_signup.php">Đăng Ký</a>
+            <a href="">Galaxy_Shop</a> <br>
+            <a href="view_cart.php">Xem giỏ hàng</a> <br>
+            <?php if (empty($_SESSION['id'])) { ?>
+                <a href="form_signin.php">Đăng nhập</a>
+                <a href="form_signup.php">Đăng Ký</a>
+            <?php } else { ?>
+                <h4>Xin chào<?php echo $_SESSION['name']; ?></h5>
+                <a href="signout.php">Đăng xuất</a>
+            <?php } ?>
         </div>
         
         <div id="content">

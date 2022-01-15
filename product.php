@@ -13,7 +13,8 @@
             </div>
             <h3><?php echo $each['name']; ?></h3>
             <h4>Giá: <?php echo $each['price']; ?> $</h4>
-            <a href="show.php">Xem chi tiết</a>                                       
+            <a href="show.php">Xem chi tiết</a>
+            <a href="add_product_in_cart.php?id=<?php echo $each['id']; ?>">Thêm vào giỏ hàng</a>                                       
         </div>
     </div>
 <?php endforeach; ?>
