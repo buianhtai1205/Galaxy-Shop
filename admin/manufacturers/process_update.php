@@ -1,4 +1,6 @@
 <?php
+    require_once '../check_super_admin_login.php';
+
 
 if(empty($_POST['name']) || empty($_POST['address']) || empty($_POST['phone']) || empty($_POST['image'])) {
     header("location:form_update.php?error=Phải điền đầy đủ thông tin");

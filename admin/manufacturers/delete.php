@@ -1,4 +1,5 @@
 <?php
+    require_once '../check_super_admin_login.php';
 
 $id = $_GET['id'];
 

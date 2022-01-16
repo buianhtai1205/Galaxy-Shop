@@ -1,4 +1,6 @@
-<?php 
+<?php
+    require_once '../check_admin_login.php';
+
 $id = $_POST['id'];
 
 if(empty($_POST['name']) || empty($_POST['description']) || empty($_POST['price'])) {

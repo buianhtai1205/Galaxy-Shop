@@ -10,6 +10,12 @@
     </li>
 </ul>
 
+<ul>
+    <li>
+    <a href="../orders"> Quản lí đơn hàng</a>
+    </li>
+</ul>
+
 <?php
     if (isset($_GET['error'])) {
 ?>
