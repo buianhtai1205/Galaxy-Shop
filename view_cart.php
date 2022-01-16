@@ -1,5 +1,6 @@
 <?php
     session_start();
+    $sum = 0;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +33,11 @@
                         <?php echo $each['quantity']; ?>
                         <a style="text-decoration: none; padding: 0 12px;" href="update_product_in_cart.php?id=<?php echo $id; ?>&type=decre">-</a>
                     </th>
-                    <th><?php echo $each['price']*$each['quantity']; ?> $</th>
+                    <th><?php
+                            $result = $each['price']*$each['quantity'];
+                            $sum += $result;
+                            echo $result; 
+                        ?> $</th>
                     <th><a href="delete_product_in_cart.php?id=<?php echo $id; ?>">Xóa</a></th>
                 </tr>
             <?php } ?>
@@ -40,5 +45,9 @@
             <h3>Không có sản phẩm trong giỏ hàng</h3>
         <?php } ?>
     </table>
+    <h3>Tổng giá trị hóa đơn: <?php echo $sum; ?> $</h3>
+    <?php if ($sum != 0) { ?>
+        <a style="text-decoration: none; background-color: #ff8502; padding: 6px; border: 2px solid #000;"href="form_checkout.php">Đặt hàng</a>
+    <?php } ?>  
 </body>
 </html>

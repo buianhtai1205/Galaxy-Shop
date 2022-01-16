@@ -24,7 +24,10 @@
         <input type="email" name="email"> <br>
         Mật khẩu
         <input type="password" name="password"> <br>
-        
+        Số điện thoại 
+        <input type="text" name="phone"> <br>
+        Địa chỉ
+        <input type="text" name="address"> <br>
         <button>Đăng ký</button>
     </form>
     <h3>Hoặc <a href="form_signin.php">Đăng nhập</a> nếu bạn đã có tài khoản</h3>

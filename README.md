@@ -9,4 +9,5 @@ link: https://www.youtube.com/c/J2TeamNNL
 - Search, Pagination
 - Sign in, sign up, sign out.
 - Cart
+- Checkout
 - ....
