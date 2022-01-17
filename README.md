@@ -10,4 +10,5 @@ link: https://www.youtube.com/c/J2TeamNNL
 - Sign in, sign up, sign out.
 - Cart
 - Checkout
+- Admin
 - ....
