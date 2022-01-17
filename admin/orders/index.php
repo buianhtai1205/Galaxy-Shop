@@ -8,13 +8,14 @@
 </head>
 <body>
     <h1>Quản lí đơn hàng</h1>
+
     <?php
         require_once '../connect.php';
         $sql = "SELECT orders.*, customers.name, customers.phone, customers.address
         FROM orders
         JOIN customers ON orders.customer_id = customers.id";
         $result = mysqli_query($connect, $sql);
-    ?>
+    ?> 
 
     <table border="1" width="100%">
         <tr>
@@ -57,8 +58,14 @@
                     ?>
                 </th>
                 <th><a href="view_detail.php?id=<?php echo $each['id']; ?>">Xem</a></th>
-                <th><a href="update_status.php?id=<?php echo $each['id']; ?>&status=1">Duyệt</a></th>
-                <th><a href="update_status.php?id=<?php echo $each['id']; ?>&status=-1">Hủy</a></th>
+                <?php if ($each['status'] == 0) { ?> 
+                    <th><a href="update_status.php?id=<?php echo $each['id']; ?>&status=1">Duyệt</a></th>
+                    <th><a href="update_status.php?id=<?php echo $each['id']; ?>&status=-1">Hủy</a></th>
+                <?php } ?>
+                <?php if ($each['status'] == 1 || $each['status'] == -1 ) { ?> 
+                    <th style="color: #ccc" >Duyệt</th>
+                    <th style="color: #ccc" >Hủy</th>
+                <?php } ?>
             </tr>
         <?php endforeach; ?>
     </table>
