@@ -33,10 +33,17 @@ if (isset($_SESSION['id'])) {
     if (isset($_GET['error'])) {
         $error = $_GET['error'];
     }
+    $success = '';
+    if (isset($_GET['success'])) {
+        $success = $_GET['success'];
+    }
     ?>
     <h1>Đăng nhập tài khoản</h1>
     <p style="color: red;">
         <?php echo $error; ?>
+    </p>
+    <p style="color: green;">
+        <?php echo $success; ?>
     </p>
     <form action="process_signin.php" method="POST">
         Email 
@@ -47,6 +54,7 @@ if (isset($_SESSION['id'])) {
         <input type="checkbox" name="remember"> <br>
         <button>Đăng nhập</button>
     </form>
+    <a href="forgot_password.php">Quên mật khẩu</a>
     <h3>Hoặc <a href="form_signup.php">Đăng kí</a> nếu bạn chưa có tài khoản</h3>
     
 </body>

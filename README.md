@@ -11,4 +11,6 @@ link: https://www.youtube.com/c/J2TeamNNL
 - Cart
 - Checkout
 - Admin
+- Send mail by PHP Mailer
+- Forgot password
 - ....
