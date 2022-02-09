@@ -1,3 +1,6 @@
+<?php
+    require_once '../check_admin_login.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,11 @@
     <title>Đơn hàng</title>
 </head>
 <body>
+    
     <h1>Quản lí đơn hàng</h1>
+    <?php 
+        include '../menu.php';
+    ?>
 
     <?php
         require_once '../connect.php';

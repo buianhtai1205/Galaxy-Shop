@@ -1,8 +1,12 @@
-<ul>
-    <li>
-    <a href="../manufacturers"> Quản lí nhà sản xuất</a>
-    </li>
-</ul>
+<?php
+
+if (!empty($_SESSION['level_admin'])) { ?>
+    <ul>
+        <li>
+        <a href="../manufacturers"> Quản lí nhà sản xuất</a>
+        </li>
+    </ul>
+<?php } ?>
 
 <ul>
     <li>
