@@ -41,6 +41,24 @@
         <textarea name="description" cols="20" rows="5"><?php echo $each['description']; ?></textarea> <br>
         Giá
         <input type="number" name="price" value="<?php echo $each['price']; ?>"> <br>
+        Màn hình
+        <input type="text" name="display" value="<?php echo $each['display']; ?>"> <br>
+        Hệ điều hành
+        <input type="text" name="os" value="<?php echo $each['os']; ?>"> <br>
+        Camera sau
+        <input type="text" name="main_camera" value="<?php echo $each['main_camera']; ?>"> <br>
+        Camera trước
+        <input type="text" name="selfie_camera" value="<?php echo $each['selfie_camera']; ?>"> <br>
+        Chip
+        <input type="text" name="chip" value="<?php echo $each['chip']; ?>"> <br>
+        RAM 
+        <input type="text" name="RAM" value="<?php echo $each['RAM']; ?>"> <br>
+        ROM 
+        <input type="text" name="ROM" value="<?php echo $each['ROM']; ?>"> <br>
+        Sim 
+        <input type="text" name="sim" value="<?php echo $each['sim']; ?>"> <br>
+        Dung lượng pin 
+        <input type="text" name="battery" value="<?php echo $each['battery']; ?>"> <br>
         Nhà sản xuất
         <select name="manufacturer_id">
             <?php foreach ($manufacturers as $manufacturer): ?>

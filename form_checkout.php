@@ -31,7 +31,7 @@ $id = $_SESSION['id'];
         Địa chỉ nhận hàng
         <input type="text" name="address_receiver" value="<?php echo $result['address'] ?>"> <br>
         Lời nhắn với shop
-        <input style="width: 300px;" type="text" name="message_receiver"> <br>
+        <input style="width: 300px;" type="text" name="message"> <br>
         <button>Đặt hàng</button>
     </form>
 </body>

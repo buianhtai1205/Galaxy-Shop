@@ -26,6 +26,15 @@ if ($image_new['size'] > 0) {
 }
 $description = addslashes($_POST['description']);
 $price = addslashes($_POST['price']);
+$display = addslashes($_POST['display']);
+$os = addslashes($_POST['os']);
+$main_camera = addslashes($_POST['main_camera']);
+$selfie_camera = addslashes($_POST['selfie_camera']);
+$chip = addslashes($_POST['chip']);
+$RAM = addslashes($_POST['RAM']);
+$ROM = addslashes($_POST['ROM']);
+$sim = addslashes($_POST['sim']);
+$battery = addslashes($_POST['battery']);
 $manufacturer_id = addslashes($_POST['manufacturer_id']);
 
 
@@ -38,6 +47,15 @@ name = '$name',
 image = '$file_name',
 description = '$description',
 price = '$price',
+display = '$display',
+os = '$os',
+main_camera = '$main_camera',
+selfie_camera = '$selfie_camera',
+chip = '$chip',
+RAM = '$RAM',
+ROM = '$ROM',
+sim = '$sim',
+battery = '$battery',
 manufacturer_id = '$manufacturer_id'
 Where id = '$id'  " ;
 

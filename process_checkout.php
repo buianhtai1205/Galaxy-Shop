@@ -5,7 +5,7 @@ $customer_id = $_SESSION['id'];
 $name_receiver = addslashes($_POST['name_receiver']);
 $phone_receiver = addslashes($_POST['phone_receiver']);
 $address_receiver = addslashes($_POST['address_receiver']);
-$message_receiver = addslashes($_POST['message_receiver']);
+$message = addslashes($_POST['message']);
 
 $status = 0;
 
@@ -16,8 +16,8 @@ foreach ($_SESSION['cart'] as $id => $each) {
 
 require_once './admin/connect.php';
 
-$sql = "INSERT into orders(customer_id, name_receiver, phone_receiver, address_receiver,message_receiver, status, total_price)
-VALUE('$customer_id', '$name_receiver', '$phone_receiver', '$address_receiver', '$message_receiver', '$status', '$total_price') ";
+$sql = "INSERT into orders(name_receiver, phone_receiver, address_receiver, message, status, total_price, customer_id)
+VALUE('$name_receiver', '$phone_receiver', '$address_receiver', '$message', '$status', '$total_price', '$customer_id') ";
 mysqli_query($connect, $sql);
 
 $sql = "SELECT MAX(id) FROM orders

@@ -40,6 +40,34 @@
         Nhà sản xuất: <?php echo $result_mnf['name']; ?>
     </h3>
     <img width="500" src="images/<?php echo $result['image']; ?>" alt="">
+    <h3>Cấu hình điện thoại <?php echo $result['name']; ?></h3>
+    <h4>
+        Màn hình: <?php echo $result['display']; ?>
+    </h4>
+    <h4>
+        Hệ điều hành: <?php echo $result['os']; ?>
+    </h4>
+    <h4>
+        Camera sau: <?php echo $result['main_camera']; ?>
+    </h4>
+    <h4>
+        Camera trước: <?php echo $result['selfie_camera']; ?>
+    </h4>
+    <h4>
+        Chip: <?php echo $result['chip']; ?>
+    </h4>
+    <h4>
+        RAM: <?php echo $result['RAM']; ?>
+    </h4>
+    <h4>
+        ROM: <?php echo $result['ROM']; ?>
+    </h4>
+    <h4>
+        Sim: <?php echo $result['sim']; ?>
+    </h4>
+    <h4>
+        Pin, Sạc: <?php echo $result['battery']; ?>
+    </h4>
     <p>
         <?php echo nl2br($result['description']); ?>
     </p>

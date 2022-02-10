@@ -52,7 +52,7 @@
                     <?php echo $each['address'] ; ?> <br>
                 </th>
                 <th><?php echo $each['total_price']; ?> $</th>
-                <th><?php echo $each['message_receiver']; ?></th>
+                <th><?php echo $each['message']; ?></th>
                 <th>
                     <?php
                         if ($each['status'] == 0) {

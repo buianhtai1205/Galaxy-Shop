@@ -31,6 +31,24 @@
         <textarea name="description" cols="20" rows="5"></textarea> <br>
         Giá
         <input type="number" name="price"> <br>
+        Màn hình
+        <input type="text" name="display"> <br>
+        Hệ điều hành
+        <input type="text" name="os"> <br>
+        Camera sau
+        <input type="text" name="main_camera"> <br>
+        Camera trước
+        <input type="text" name="selfie_camera"> <br>
+        Chip
+        <input type="text" name="chip"> <br>
+        RAM 
+        <input type="text" name="RAM"> <br>
+        ROM 
+        <input type="text" name="ROM"> <br>
+        Sim 
+        <input type="text" name="sim"> <br>
+        Dung lượng pin 
+        <input type="text" name="battery"> <br>
         Nhà sản xuất
         <select name="manufacturer_id">
             <?php foreach ($result as $each): ?>
