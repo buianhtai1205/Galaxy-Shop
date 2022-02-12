@@ -42,4 +42,4 @@ if ($remember) {
     setcookie('remember', $token, time() + (86400*30));
 }
 
-header("Location:user.php");
+header("Location:index.php");

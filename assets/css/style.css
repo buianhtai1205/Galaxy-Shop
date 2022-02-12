@@ -42,26 +42,35 @@ picture {
   }
 }
 
-#header {
-    height: 100px;
-    background-color: rgb(10, 148, 240);
+.html {
+  position: relative;
+}
+
+#content {
+  margin-top: 100px;
 }
 
 #side_bar {
     height: 800px;
     background-color: blue;
 }
-#products {
-    height: 800px;
+/* #products {
     background-color: red;
-}
+} */
 .nav_bar {
     height: 100px;background-color:#ccc;
 }
 .product {
     margin-top: 12px;
-    height: 250px;
-    background-color: yellow;
+    height: 300px;
+    /* background-color: yellow; */
+    border: 2px solid rgb(168, 179, 204);
+    cursor: pointer;
+}
+.product:hover {
+    transform: translateY(-2px);
+    animation: tranform 0.3s linear;
+    box-shadow: 2px 2px 2px 2px #0e54ec;
 }
 .product h3 {
     overflow: hidden;
@@ -79,6 +88,7 @@ picture {
 
 }
 #footer {
+    margin-top: 24px;
     height: 50px;
     background-color: rgb(78, 240, 14);
 }

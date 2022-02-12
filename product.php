@@ -6,9 +6,9 @@
 
 ?>
 <?php foreach($results as $each): ?>
-    <div class="col l-2-4 m-4 c-6">
+    <div class="col l-3 m-4 c-6">
         <div class="product" >
-            <div style="height: 120px; padding: 6px; display: block; background-color: rgb(23, 184, 248);">
+            <div style="height: 120px; padding: 6px; display: block;">
                 <img style="height: 110px; margin: auto;" src="./admin/products/images/<?php echo $each['image']; ?>" alt="">
             </div>
             <h3><?php echo $each['name']; ?></h3>

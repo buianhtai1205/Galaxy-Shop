@@ -1,0 +1,59 @@
+/* 
+
+<------ HTML code ----->
+<div class="galaxy">
+    <div class="t t1">galaxyAT</div>
+    <div class="t t2">galaxyAT</div>
+    <div class="t t3">galaxyAT</div>
+    <div class="t t4">galaxyAT</div>
+</div>
+
+<------ source ----->
+Youtube: Awesome Code
+Link video: https://www.youtube.com/watch?v=BYfcXFCJHAY&t=0s
+
+*/
+
+
+.galaxy {
+    font-size: 64px;
+    color: #aaa;
+    position: relative;
+    margin-left: 32px;
+}
+.t {
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-weight: 600;
+    --shade: #eee;
+    text-shadow:
+    -1px 1px 0px var(--shade),
+    -2px 2px 0px var(--shade),
+    -3px 3px 0px var(--shade),
+    -4px 4px 0px var(--shade),
+    -5px 5px 0px var(--shade),
+    -6px 8px 10px rgba(0, 0, 0, 0.712);
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+.t2 {
+    --size: 70px;
+    clip-path: circle(var(--size) at 0 0);
+    color: #44c4ff;
+    --shade: #007ab3;
+}
+.t3 {
+    --size: 60px;
+    clip-path: circle(var(--size) at 100% 0);
+    color: #00ff95;
+    --shade: #00b96c;
+}
+.t4 {
+    --size: 80px;
+    clip-path: circle(var(--size) at 50% 120%);
+    color: #ff00d4;
+}
+.t:hover {
+    --size: 100px;
+}
